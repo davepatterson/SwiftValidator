@@ -2,9 +2,8 @@ language: objective-c
 osx_image: xcode7.1
 
 before_install:
-  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
-  - xcodebuild clean build test -project Validator.xcodeproj -scheme Validator -sdk iphonesimulator9.1 -destination "OS=9.1,name=iPhone 6" | xcpretty
+  - xcodebuild clean build test -project Validator.xcodeproj -scheme Validator -sdk iphonesimulator9.1 -destination "OS=9.1,name=iPhone 6" -enableCodeCoverage YES | xcpretty
   - pod lib lint
