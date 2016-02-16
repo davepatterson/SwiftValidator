@@ -132,7 +132,7 @@ class SwiftValidatorTests: XCTestCase {
     }
     
     // MARK: Max Length
-    
+    /*
     func testMaxLength(){
         XCTAssertTrue(MaxLengthRule().validate(LEN_3),"Max Length should be valid")
     }
@@ -144,8 +144,10 @@ class SwiftValidatorTests: XCTestCase {
     func testMaxLengthParameterAndGreaterThan(){
         XCTAssertTrue(MaxLengthRule(length: 20).validate(LEN_20), "Max Length should be 20 and <= length")
     }
+    */
     
     // MARK: Min Length
+    /*
     func testMinLength(){
         XCTAssertTrue(MinLengthRule().validate(LEN_3),"Min Length should be valid")
     }
@@ -157,7 +159,7 @@ class SwiftValidatorTests: XCTestCase {
     func testMinLengthWithParameter(){
         XCTAssertTrue(MinLengthRule(length: 5).validate(LEN_5), "Min Len should be set to 5 and >= length")
     }
-    
+    */
     // MARK: Full Name
     
     func testFullName(){
