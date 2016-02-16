@@ -6,5 +6,5 @@ before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
-  - xcodebuild clean build test -project Validator.xcodeproj -scheme Validator -sdk iphonesimulator9.2
+  - xcodebuild clean build test -project Validator.xcodeproj -scheme Validator -sdk iphonesimulator9.1 -destination "OS=9.1,name=iPhone 6"
   - pod lib lint
