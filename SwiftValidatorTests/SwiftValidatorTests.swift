@@ -161,7 +161,7 @@ class SwiftValidatorTests: XCTestCase {
     }
     */
     // MARK: Full Name
-    
+    /*
     func testFullName(){
         XCTAssertTrue(FullNameRule().validate("Jeff Potter"), "Full Name should be valid")
     }
@@ -173,9 +173,9 @@ class SwiftValidatorTests: XCTestCase {
     func testFullNameInvalid(){
         XCTAssertFalse(FullNameRule().validate("Carl"), "Full Name should be invalid")
     }
-    
+    */
     // MARK: Register Field
-    
+    /*
     func testRegisterField(){
         REGISTER_VALIDATOR.registerField(REGISTER_TXT_FIELD, rules: REGISTER_RULES)
         XCTAssert(REGISTER_VALIDATOR.validations[REGISTER_TXT_FIELD] != nil, "Textfield should register")
@@ -198,6 +198,7 @@ class SwiftValidatorTests: XCTestCase {
             XCTAssert(errors.count == 0, "Should not come back with errors")
         }
     }
+    */
     
     // MARK: Validate Functions
     
