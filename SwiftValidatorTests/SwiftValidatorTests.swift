@@ -110,7 +110,7 @@ class SwiftValidatorTests: XCTestCase {
     }
     
     // MARK: Confirm against field
-    
+    /*
     func testConfirmSame(){
         CONFIRM_TXT_FIELD.text = CONFIRM_TEXT
         XCTAssertTrue(ConfirmationRule(confirmField: CONFIRM_TXT_FIELD).validate(CONFIRM_TEXT), "Should confirm successfully")
@@ -119,10 +119,10 @@ class SwiftValidatorTests: XCTestCase {
     func testConfirmDifferent() {
         CONFIRM_TXT_FIELD.text = CONFIRM_TEXT
         XCTAssertFalse(ConfirmationRule(confirmField: CONFIRM_TXT_FIELD).validate(CONFIRM_TEXT_DIFF), "Should fail confirm")
-    }
+    }*/
     
     // MARK: Password
-    
+    /*
     func testPassword() {
         XCTAssertTrue(PasswordRule().validate(VALID_PASSWORD), "Password should be valid")
     }
@@ -130,6 +130,7 @@ class SwiftValidatorTests: XCTestCase {
     func testPasswordInvalid(){
         XCTAssertFalse(EmailRule().validate(INVALID_PASSWORD), "Password is invalid")
     }
+    */
     
     // MARK: Max Length
     /*
